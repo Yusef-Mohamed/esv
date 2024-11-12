@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "Bygger for fremtiden med ESV AS <br/> Din pålitelige entreprenør i Oslo",
+    "description": "Vi er en erfaren entreprenør som leverer skreddersydde løsninger for nybygg, rehabilitering og innredning. Vårt fokus er på kvalitet, bærekraft og innovative tilnærminger som gir varige resultater.",
+    "action": "Om oss",
+    "subAction": "Våre tjenester"
+  },
+  "header": {
+    "navigationMenu": "Navigasjonsmeny"
+  },
+  "footer": {
+    "description": "Vi er en erfaren entreprenør som leverer skreddersydde løsninger for nybygg, rehabilitering og innredning. Vårt fokus er på kvalitet, bærekraft og innovative tilnærminger som gir varige resultater.",
+    "importantLinks": "Viktige lenker",
+    "phone": "+47 45 14 13 45",
+    "email": "post@esvc.no",
+    "address": "Inngang 3 Hasleveien 28 0571 Oslo",
+    "orgNo": "Org. nr: 997 306 503",
+    "workHoursTitle": "Arbeidstider:",
+    "workHoursWeekdays": "Mandag - fredag : 07.00 - 15.30",
+    "workHoursWeekend": "Lørdag - søndag : stengt",
+    "copyright": "Opphavsrett",
+    "company": "ESV AS"
+  },
+  "pages": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "services": "Tjenester",
+    "projects": "Prosjekter",
+    "transparency-act": "Åpenhetsloven"
+  },
+  "projects": {
+    "title": "Våre prosjekter",
+    "description": "Vi har fullført et bredt spekter av prosjekter i Oslo og nærliggende områder. Vår portefølje inkluderer nybygg, rehabilitering og interiørarbeid. Vi er stolte av kvaliteten og håndverket i hvert prosjekt vi gjennomfører.",
+    "action": "Se alle prosjekter",
+    "all": "Alle prosjekter",
+    "noProjects": "Ingen prosjekter funnet"
+  },
+  "services": {
+    "title": "Våre tjenester",
+    "description": "Vi tilbyr et bredt spekter av tjenester for å møte kundenes behov. Vårt erfarne team kan hjelpe deg med nybygg, rehabilitering og interiørarbeid. Vi er dedikert til å levere resultater av høy kvalitet som møter dine behov og overgår dine forventninger.",
+    "action": "Se alle tjenester",
+    "all": "Alle tjenester",
+    "noServices": "Ingen tjenester funnet",
+    "requestService": "Be om en tjeneste",
+    "readMore": "Les mer",
+    "readLess": "Les mindre"
+  },
+  "contact": {
+    "contactUs": "Kontakt oss",
+    "service": "Tjeneste",
+    "name": "Navn",
+    "subject": "Emne",
+    "telephone": "Telefon",
+    "email": "E-post",
+    "companyName": "Firmanavn",
+    "describeWhatYouNeed": "Beskriv hva du trenger",
+    "send": "Send",
+    "messageSent": "Meldingen din er sendt.",
+    "messageFailed": "En feil oppstod under sending av meldingen. Prøv igjen senere.",
+    "selectService": "Velg en tjeneste",
+    "contactInfo": "Kontaktinformasjon",
+    "phone": "+47 45 14 13 45",
+    "address": "Inngang 3 Hasleveien 28 0571 Oslo",
+    "orgNo": "Org. nr: 997 306 503",
+    "workHoursTitle": "Arbeidstider:",
+    "workHoursWeekdays": "Mandag - fredag : 07.00 - 15.30",
+    "workHoursWeekend": "Lørdag - søndag : stengt",
+    "followUs": "Følg oss"
+  },
+  "about": {
+    "title": "Om oss",
+    "learnMore": "Les mer",
+    "homeP": "ESV AS er en byggentreprenør basert i Oslo med bred kompetanse innen byggeteknikk og prosjektgjennomføring i henhold til NS 8405 og NS 8407. Vi påtar oss oppdrag innen nybygg, rehabilitering, service, og bygginnredning.",
+    "aboutP1": "ESV AS ble etablert i 2011 som et entreprenørselskap innen bygg- og anleggsbransjen. Siden den gang har vi utviklet oss til å bli en solid aktør og en profesjonell byggentreprenør med over 90 dedikerte ansatte. Våre virksomhetsområder omfatter nybygg, rehabilitering, service, og bygginnredning.",
+    "aboutP2": "Vi søker alltid å utfordre mulighetene og legger stor vekt på kompetanse og kvalitet, samtidig som vi alltid imøtekommer våre kunders behov. Våre prosjekter gjennomføres etter gjeldende forskrifter og ferdigstilles til avtalte tider med høy kvalitet og profesjonalisme.",
+    "healthTitle": "Helse, miljø og sikkerhet (HMS)",
+    "healthP": "HMS er av største betydning for oss i ESV AS, og vi er forpliktet til å sikre en trygg og sikker arbeidsplass for alle våre medarbeidere, slik at de kan komme trygt hjem fra jobb hver dag. Gjennom kontinuerlig forbedring og målrettet opplæring jobber vi mot en visjon om null skader og ulykker. Vi mener at alle ulykker kan forebygges, og vårt mål er å oppnå en kultur der sikkerhet alltid er første prioritet.",
+    "transparencyTitle": "Åpenhetsloven",
+    "transparencyP": "ESV AS omfattes av åpenhetsloven, som skal fremme virksomheters respekt for grunnleggende menneskerettigheter og anstendige arbeidsforhold. Vi har implementert systemer og rutiner som sikrer at våre forretningsprosesser følger etiske og juridiske retningslinjer. For mer informasjon om redegjørelser fra ESV AS og annen informasjon om åpenhetsloven, finner du relevant informasjon her.",
+    "safetyTitle": "Sikkerhet og effektivitet",
+    "safetyP": "Vi har implementert avanserte systemer, rutiner og prosedyrer som hjelper oss med å tilrettelegge og planlegge for sikker og effektiv produksjon. Vår tilnærming kombinerer teknologisk støtte med sunne holdninger og sterke verdier, noe som gjør oss til en av bransjens ledende aktører når det gjelder sikkerhet og kvalitet.",
+    "socialTitle": "Samfunnsansvar og sponsing",
+    "socialP": "ESV AS ønsker å være en aktiv bidragsyter til lokalsamfunnet. Gjennom vårt sponsorfond ønsker vi å støtte lag, organisasjoner og aktiviteter som bidrar til sunne aktiviteter og gode oppvekstvilkår for barn og unge i Oslo. Vi tror på å bygge en sterk og bærekraftig fremtid ved å investere i våre unge talenter."
+  }
+}

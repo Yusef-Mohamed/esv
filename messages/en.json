@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "Building for the Future with ESV AS <br/> Your Trusted Contractor in Oslo",
+    "description": "We are an experienced construction contractor delivering tailored solutions for new construction, rehabilitation, and building interiors. Our focus is on quality, sustainability, and innovative approaches that deliver lasting results.",
+    "action": "About us",
+    "subAction": "Our services"
+  },
+  "header": {
+    "navigationMenu": "Navigation Menu"
+  },
+  "footer": {
+    "description": "We are an experienced construction contractor delivering tailored solutions for new construction, rehabilitation, and building interiors. Our focus is on quality, sustainability, and innovative approaches that deliver lasting results.",
+    "importantLinks": "Important Links",
+    "phone": "+47 45 14 13 45",
+    "email": "post@esvc.no",
+    "address": "Entrance 3 Hasleveien 28 0571 Oslo",
+    "orgNo": "Org. no: 997 306 503",
+    "workHoursTitle": "Work hours:",
+    "workHoursWeekdays": "Monday - Friday : 07.00 - 15.30",
+    "workHoursWeekend": "Saturday - Sunday : closed",
+    "copyright": "Copyright",
+    "company": "ESV AS"
+  },
+  "pages": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact",
+    "services": "Services",
+    "projects": "Projects",
+    "transparency-act": "The Transparency Act"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "We have completed a wide range of projects in Oslo and the surrounding areas. Our portfolio includes new construction, rehabilitation, and interior work. We are proud of the quality and craftsmanship that goes into every project we undertake.",
+    "action": "View all projects",
+    "all": "All projects",
+    "noProjects": "No projects found"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a wide range of services to meet the needs of our clients. Our team of experienced professionals can help you with new construction, rehabilitation, and interior work. We are committed to delivering high-quality results that meet your needs and exceed your expectations.",
+    "action": "View all services",
+    "all": "All services",
+    "noServices": "No services found",
+    "requestService": "Request a service",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "contact": {
+    "contactUs": "Contact us",
+    "service": "Service",
+    "name": "Name",
+    "subject": "Subject",
+    "telephone": "Telephone",
+    "email": "Email",
+    "companyName": "Company name",
+    "describeWhatYouNeed": "Describe what you need",
+    "send": "Send",
+    "messageSent": "Your message has been sent successfully.",
+    "messageFailed": "An error occurred while sending your message. Please try again later.",
+    "selectService": "Select a service",
+    "contactInfo": "Contact information",
+    "phone": "+47 45 14 13 45",
+    "address": "Entrance 3 Hasleveien 28 0571 Oslo",
+    "orgNo": "Org. no: 997 306 503",
+    "workHoursTitle": "Work hours:",
+    "workHoursWeekdays": "Monday - Friday : 07.00 - 15.30",
+    "workHoursWeekend": "Saturday - Sunday : closed",
+    "followUs": "Follow us"
+  },
+  "about": {
+    "title": "About us",
+    "learnMore": "Learn more",
+    "homeP": "ESVC AS is a construction contractor based in Oslo, with extensive expertise in structural engineering and project management in accordance with NS 8405 and NS 8407. We take on projects in new construction, rehabilitation, service, and building interiors.",
+    "aboutP1": "ESV AS was established in 2011 as a contracting company within the construction industry. Since then, we have grown to become a solid player and a professional construction contractor with over 90 dedicated employees. Our areas of operation include new construction, rehabilitation, service, and building interiors.",
+    "aboutP2": "We always strive to challenge possibilities and place great emphasis on competence and quality while meeting the needs of our clients. Our projects are carried out in accordance with applicable regulations and completed on time with high quality and professionalism.",
+    "healthTitle": "Health, Safety, and Environment (HSE)",
+    "healthP": "HSE is of utmost importance to us at ESV AS, and we are committed to ensuring a safe working environment for all our employees so that they can return home safely every day. Through continuous improvement and targeted training, we aim to achieve a vision of zero injuries and accidents. We believe that all accidents are preventable, and our goal is to foster a culture where safety always comes first.",
+    "transparencyTitle": "Transparency Act",
+    "transparencyP": "ESV AS is subject to the Transparency Act, which aims to promote respect for fundamental human rights and decent working conditions. We have implemented systems and procedures to ensure our business processes follow ethical and legal guidelines. For more information about statements from ESV AS and other information related to the Transparency Act, relevant information can be found here.",
+    "safetyTitle": "Safety and Efficiency",
+    "safetyP": "We have implemented advanced systems, routines, and procedures that help us organize and plan for safe and efficient production. Our approach combines technological support with sound attitudes and strong values, making us one of the leading players in the industry regarding safety and quality.",
+    "socialTitle": "Social Responsibility and Sponsorship",
+    "socialP": "ESV AS aims to be an active contributor to the local community. Through our sponsorship fund, we wish to support teams, organizations, and activities that promote healthy activities and provide good conditions for children and youth in Oslo. We believe in building a strong and sustainable future by investing in our young talents."
+  }
+}
