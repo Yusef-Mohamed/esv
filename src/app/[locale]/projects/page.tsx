@@ -2,12 +2,12 @@ import { client } from "@/sanity/client";
 import { type SanityDocument } from "next-sanity";
 import PageBanner from "@/components/PageBanner";
 import PageBreadCrumb from "@/components/PageBreadcrumb";
-import { getTranslations } from "next-intl/server";
-import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/routing";
+// import { getTranslations } from "next-intl/server";
+// import { Button } from "@/components/ui/button";
+// import { Link } from "@/i18n/routing";
 import ProjectCard from "@/components/ProjectCard";
 import { useTranslations } from "next-intl";
-const SERVICES_QUERY = `*[_type == "service"]{_id, title_en, title_no}`;
+// const SERVICES_QUERY = `*[_type == "service"]{_id, title_en, title_no}`;
 const options = {};
 export default async function ProjectsPage({
   searchParams,
@@ -17,13 +17,13 @@ export default async function ProjectsPage({
   };
 }) {
   const { service } = await searchParams;
-  const text = await getTranslations("projects");
+  // const text = await getTranslations("projects");
   const serviceId = service ? service : "";
-  const services = await client.fetch<SanityDocument[]>(
-    SERVICES_QUERY,
-    {},
-    options
-  );
+  // const services = await client.fetch<SanityDocument[]>(
+  //   SERVICES_QUERY,
+  //   {},
+  //   options
+  // );
   const projectsQuery = serviceId
     ? `*[_type == "project" && references($serviceId)] | order(_createdAt desc) {
       _id, title_en, description_en, title_no, description_no, coverImage, gallery, relatedService->{
@@ -49,7 +49,7 @@ export default async function ProjectsPage({
       <PageBanner pageTitle="projects" />
       <section className="container secPadding">
         <PageBreadCrumb pageTitle="projects" />
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <Button variant={serviceId ? "faded" : "default"} asChild>
             <Link href={`/projects`}>{text("all")}</Link>
           </Button>
@@ -64,7 +64,7 @@ export default async function ProjectsPage({
               </Link>
             </Button>
           ))}
-        </div>
+        </div> */}
         <DisplayProjects projects={projects} />
       </section>
     </main>

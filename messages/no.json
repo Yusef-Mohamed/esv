@@ -34,7 +34,8 @@
     "description": "Vi har fullført et bredt spekter av prosjekter i Oslo og nærliggende områder. Vår portefølje inkluderer nybygg, rehabilitering og interiørarbeid. Vi er stolte av kvaliteten og håndverket i hvert prosjekt vi gjennomfører.",
     "action": "Se alle prosjekter",
     "all": "Alle prosjekter",
-    "noProjects": "Ingen prosjekter funnet"
+    "noProjects": "Ingen prosjekter funnet",
+    "service": "Tjeneste"
   },
   "services": {
     "title": "Våre tjenester",

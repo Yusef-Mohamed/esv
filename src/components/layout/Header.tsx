@@ -6,6 +6,7 @@ import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
@@ -69,26 +70,27 @@ const Header = () => {
               </SheetHeader>
               <nav className="lg:flex text-lg gap-4 flex flex-col">
                 {links.map((link) => (
-                  <Link
-                    key={link.url}
-                    className={cn(
-                      "relative py-4  hover:text-primary px-4 group transition-all",
-                      {
-                        "font-semibold text-primary": pathname === link.url,
-                      }
-                    )}
-                    href={link.url}
-                  >
-                    {pages(link.label)}
-                    <div
+                  <SheetClose key={link.url} asChild>
+                    <Link
                       className={cn(
-                        "absolute bottom-0 left-0 w-full h-0.5 bg-primary origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform",
+                        "relative py-4  hover:text-primary px-4 group transition-all",
                         {
-                          "scale-x-100": pathname === link.url,
+                          "font-semibold text-primary": pathname === link.url,
                         }
                       )}
-                    ></div>
-                  </Link>
+                      href={link.url}
+                    >
+                      {pages(link.label)}
+                      <div
+                        className={cn(
+                          "absolute bottom-0 left-0 w-full h-0.5 bg-primary origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform",
+                          {
+                            "scale-x-100": pathname === link.url,
+                          }
+                        )}
+                      ></div>
+                    </Link>
+                  </SheetClose>
                 ))}
               </nav>
             </SheetContent>

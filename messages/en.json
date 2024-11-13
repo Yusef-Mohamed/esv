@@ -34,7 +34,8 @@
     "description": "We have completed a wide range of projects in Oslo and the surrounding areas. Our portfolio includes new construction, rehabilitation, and interior work. We are proud of the quality and craftsmanship that goes into every project we undertake.",
     "action": "View all projects",
     "all": "All projects",
-    "noProjects": "No projects found"
+    "noProjects": "No projects found",
+    "service": "Service"
   },
   "services": {
     "title": "Our Services",

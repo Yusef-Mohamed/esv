@@ -23,7 +23,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, services }) => {
         <div className="relative overflow-hidden">
           {service.image && (
             <Image
-              src={urlFor(service.image).width(600).height(300).url() as string}
+              src={
+                (urlFor(service.image)
+                  .width(600)
+                  .height(300)
+                  ?.url() as string) || ""
+              }
               alt={service.title_en}
               className="w-full rounded aspect-[2/1] group-hover:scale-[1.2] transition-transform"
               width={600}
