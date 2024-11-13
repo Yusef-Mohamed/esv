@@ -74,7 +74,7 @@ const Footer = () => {
             <FaPhone className="text-primary w-6 h-6" />
             <a
               target="_blank"
-              href="tel:4745141345"
+              href="tel:4792929800"
               className="hover:underline"
             >
               {text("phone")}
@@ -83,7 +83,7 @@ const Footer = () => {
           <div className="flex items-center gap-3 md:gap-4">
             <MdOutlineEmail className="text-primary w-6 h-6" />
             <a
-              href="mailto:post@esvc.no"
+              href="mailto:info@esvc.no"
               target="_blank"
               className="hover:underline"
             >

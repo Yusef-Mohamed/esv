@@ -73,14 +73,14 @@ export default async function TransparencyPage({
               <p>
                 For inquiries related to the Transparency Act, ESV AS can be
                 contacted via email at{" "}
-                <a href="mailto:post@esvc.no">post@esvc.no</a>.
+                <a href="mailto:info@esvc.no">info@esvc.no</a>.
               </p>
               <p>
                 If anyone believes that ESV AS is not meeting its information
                 obligations under the Transparency Act, they are encouraged to
                 file a complaint regarding a potential breach of the Act. We
                 kindly ask that you first contact ESV AS directly at{" "}
-                <a href="mailto:post@esvc.no">post@esvc.no</a> to address any
+                <a href="mailto:info@esvc.no">info@esvc.no</a> to address any
                 misunderstandings or errors as promptly as possible.
               </p>
             </>
@@ -141,14 +141,14 @@ export default async function TransparencyPage({
               </ul>
               <p>
                 For spørsmål knyttet til åpenhetsloven kan ESV AS kontaktes via
-                e-post på <a href="mailto:post@esvc.no">post@esvc.no</a>.
+                e-post på <a href="mailto:info@esvc.no">info@esvc.no</a>.
               </p>
               <p>
                 Dersom noen mener at ESV AS ikke oppfyller sine
                 informasjonsforpliktelser etter åpenhetsloven, oppfordres de til
                 å sende en klage om et mulig brudd på loven. Vi anbefaler
                 imidlertid at du først kontakter ESV AS direkte på{" "}
-                <a href="mailto:post@esvc.no">post@esvc.no</a> for å løse
+                <a href="mailto:info@esvc.no">info@esvc.no</a> for å løse
                 eventuelle misforståelser eller feil så raskt som mulig.
               </p>
             </>

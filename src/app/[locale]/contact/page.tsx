@@ -62,7 +62,7 @@ export const DisplayContactContent = async () => {
               <FaPhone className="text-primary w-4 h-4" />
               <a
                 target="_blank"
-                href="tel:4745141345"
+                href="tel:4792929800"
                 className="hover:underline"
               >
                 {text("phone")}
@@ -71,11 +71,11 @@ export const DisplayContactContent = async () => {
             <div className="flex items-center gap-1.5 md:gap-2">
               <MdOutlineEmail className="text-primary w-4 h-4" />
               <a
-                href="mailto:post@esvc.no"
+                href="mailto:info@esvc.no"
                 target="_blank"
                 className="hover:underline"
               >
-                post@esvc.no
+                info@esvc.no
               </a>
             </div>
             <div className="flex items-center gap-1.5 md:gap-2">
