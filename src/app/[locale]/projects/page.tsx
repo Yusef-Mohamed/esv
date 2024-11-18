@@ -8,6 +8,7 @@ import { Link } from "@/i18n/routing";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Metadata } from "next";
 import { getLocalizedMetadata } from "@/metadataHelper";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({
   params,
@@ -70,7 +71,7 @@ export default async function ProjectsPage({
 
   const totalPages = Math.ceil(total / PAGE_SIZE);
   const text = await getTranslations("projects");
-
+  if (projects.length === 0) notFound();
   return (
     <main>
       <PageBanner pageTitle="projects" />
