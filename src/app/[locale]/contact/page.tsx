@@ -42,7 +42,7 @@ export const DisplayContactContent = async () => {
   return (
     <>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39600.404386682305!2d19.45227420059936!3d51.65937363756527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a316f8e85a2c7%3A0xe04539fbe85349e!2s95-030%20Rzg%C3%B3w%2C%20Poland!5e0!3m2!1sen!2seg!4v1731401362461!5m2!1sen!2seg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3655989719678!2d10.7210681!3d59.909479600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2a09106a93%3A0xb986d21573178897!2zRmlsaXBzdGFkdmVpZW4gMywgMDI1MCBPc2xvLCDYp9mE2YbYsdmI2YrYrA!5e0!3m2!1sar!2seg!4v1731957614875!5m2!1sar!2seg"
         height={450}
         allowFullScreen
         className="w-full"
