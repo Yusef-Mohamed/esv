@@ -3,7 +3,7 @@ import { type SanityDocument } from "next-sanity";
 import PageBanner from "@/components/PageBanner";
 import PageBreadCrumb from "@/components/PageBreadcrumb";
 import ContactForm from "@/components/ContactForm";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 const SERVICES_QUERY = `*[_type == "service"]{_id, title_en, description_en , title_no, description_no , image}`;
 import { FaPhone } from "react-icons/fa";
@@ -39,16 +39,28 @@ export default async function ContactPage() {
 export const DisplayContactContent = async () => {
   const services = await client.fetch<SanityDocument[]>(SERVICES_QUERY);
   const text = await getTranslations("contact");
+  const locale = await getLocale();
   return (
     <>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3655989719678!2d10.7210681!3d59.909479600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2a09106a93%3A0xb986d21573178897!2zRmlsaXBzdGFkdmVpZW4gMywgMDI1MCBPc2xvLCDYp9mE2YbYsdmI2YrYrA!5e0!3m2!1sar!2seg!4v1731957614875!5m2!1sar!2seg"
-        height={450}
-        allowFullScreen
-        className="w-full"
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
+      {locale === "en" ? (
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3655989719678!2d10.7210681!3d59.909479600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2a09106a93%3A0xb986d21573178897!2zRmlsaXBzdGFkdmVpZW4gMywgMDI1MCBPc2xvLCDYp9mE2YbYsdmI2YrYrA!5e0!3m2!1sen!2sus!4v1731957614875!5m2!1sen!2sus"
+          height={450}
+          allowFullScreen
+          className="w-full"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      ) : (
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.3655989719678!2d10.7210681!3d59.909479600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416c2a09106a93%3A0xb986d21573178897!2zRmlsaXBzdGFkdmVpZW4gMywgMDI1MCBPc2xvLCDYp9mE2YbYsdmI2YrYrA!5e0!3m2!1sno!2sno!4v1731957614875!5m2!1sno!2sno"
+          height={450}
+          allowFullScreen
+          className="w-full"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      )}
       <div className="grid mt-10 lg:mt-12 lg:grid-cols-2 gap-8 lg:gap-10">
         <ContactForm services={services} />
         <div>
