@@ -1,7 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import PageBanner from "@/components/PageBanner";
 import PageBreadCrumb from "@/components/PageBreadcrumb";
-
+import { getLocalizedMetadata } from "@/metadataHelper";
+import { Metadata } from "next";
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = getLocalizedMetadata(locale, "transparencyAct");
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
+  };
+}
 export default async function TransparencyPage({
   params,
 }: {
@@ -44,8 +58,11 @@ export default async function TransparencyPage({
               </p>
               <h2>Available Reports:</h2>
               <ul>
-                <li>ESV AS’s report for 2023 is available in PDF format.</li>
-                <li>ESV AS’s report for 2024 is available in PDF format.</li>
+                <li>
+                  <a href="/2023-report.pdf" target="_blank">
+                    ESV AS’s report for 2023 is available in PDF format.
+                  </a>
+                </li>
               </ul>
               <p>
                 The Transparency Act grants individuals the right to request
@@ -111,10 +128,9 @@ export default async function TransparencyPage({
               <h2>Tilgjengelige rapporter:</h2>
               <ul>
                 <li>
-                  ESV AS sin rapport for 2023 er tilgjengelig i PDF-format.
-                </li>
-                <li>
-                  ESV AS sin rapport for 2024 er tilgjengelig i PDF-format.
+                  <a href="/2023-report.pdf" target="_blank">
+                    ESV AS sin rapport for 2023 er tilgjengelig i PDF-format.
+                  </a>
                 </li>
               </ul>
               <p>

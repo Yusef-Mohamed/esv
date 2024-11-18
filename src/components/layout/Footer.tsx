@@ -1,34 +1,11 @@
 import { useTranslations } from "next-intl";
 import Logo from "../Logo";
-import {
-  FaAngleDoubleRight,
-  FaFacebookF,
-  FaInstagram,
-  FaPhone,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaAngleDoubleRight, FaPhone } from "react-icons/fa";
 import { MdOutlineAccessTime, MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link } from "@/i18n/routing";
 import { links, partners } from "@/constants";
 import Image from "next/image";
-const socialLinks = [
-  {
-    name: "facebook",
-    icon: <FaFacebookF className="w-5 h-5" />,
-    url: "https://www.facebook.com",
-  },
-  {
-    name: "twitter",
-    icon: <FaXTwitter className="w-5 h-5" />,
-    url: "https://www.twitter.com",
-  },
-  {
-    name: "instagram",
-    icon: <FaInstagram className="w-5 h-5" />,
-    url: "https://www.instagram.com",
-  },
-];
 const Footer = () => {
   const text = useTranslations("footer");
   const pages = useTranslations("pages");
@@ -38,18 +15,6 @@ const Footer = () => {
         <div className="sm:col-span-2">
           <Logo isLight className="w-48" />
           <p className="max-w-lg text-white mt-4 mb-6">{text("description")}</p>
-          <div className="flex space-x-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                className="text-white hover:scale-110 transition-all bg-primary/10 w-10 h-10 flex items-center justify-center rounded-md"
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
         </div>
         <div>
           <h3 className="font-semibold text-lg md:text-xl mb-3 md:mb-4">

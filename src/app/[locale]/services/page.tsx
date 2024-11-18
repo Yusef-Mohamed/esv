@@ -3,9 +3,23 @@ import { type SanityDocument } from "next-sanity";
 import ServiceCard from "@/components/ServiceCard";
 import PageBanner from "@/components/PageBanner";
 import PageBreadCrumb from "@/components/PageBreadcrumb";
+import { Metadata } from "next";
+import { getLocalizedMetadata } from "@/metadataHelper";
 
 const SERVICES_QUERY = `*[_type == "service"]{_id, title_en, description_en , title_no, description_no , image}`;
-
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = getLocalizedMetadata(locale, "services");
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
+  };
+}
 export default async function ServicesPage() {
   const services = await client.fetch<SanityDocument[]>(SERVICES_QUERY);
   return (

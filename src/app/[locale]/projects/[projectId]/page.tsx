@@ -18,6 +18,52 @@ const projectQuery = `*[_type == "project" && _id == $projectId][0] {
     }
 }`;
 const options = {};
+export async function generateStaticParams() {
+  const projectIdsQuery = `*[_type == "project"]{ _id }`;
+  const projects = await client.fetch<{ _id: string }[]>(projectIdsQuery);
+  return projects.map((project) => ({
+    projectId: project._id,
+  }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { projectId: string };
+}) {
+  const { projectId } = await params;
+  const project = await client.fetch(projectQuery, { projectId });
+
+  if (!project) {
+    return {
+      title: "Project Not Found | ESV AS",
+      description:
+        "The requested project could not be found. Explore other projects by ESV AS for quality construction solutions in Norway .",
+      keywords: "project not found, ESV AS, construction solutions",
+    };
+  }
+
+  const locale = await getLocale();
+  const title = locale === "en" ? project.title_en : project.title_no;
+  const description =
+    locale === "en" ? project.description_en : project.description_no;
+
+  return {
+    title: `${title} | ESV AS Project`,
+    description:
+      description ||
+      "Explore this project completed by ESV AS in Norway . Discover our dedication to quality and craftsmanship.",
+    keywords: [
+      title,
+      "ESV AS projects",
+      "construction projects Norway ",
+      "quality construction",
+      "rehabilitation projects",
+      "building interiors",
+    ].join(", "),
+  };
+}
+
 export default async function ProjectsPage({
   params,
 }: {

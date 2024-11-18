@@ -6,34 +6,32 @@ import ContactForm from "@/components/ContactForm";
 import { getTranslations } from "next-intl/server";
 
 const SERVICES_QUERY = `*[_type == "service"]{_id, title_en, description_en , title_no, description_no , image}`;
-import { FaFacebookF, FaInstagram, FaPhone } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa";
 import { MdOutlineAccessTime, MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-const socialLinks = [
-  {
-    name: "facebook",
-    icon: <FaFacebookF className="w-5 h-5" />,
-    url: "https://www.facebook.com",
-  },
-  {
-    name: "twitter",
-    icon: <FaXTwitter className="w-5 h-5" />,
-    url: "https://www.twitter.com",
-  },
-  {
-    name: "instagram",
-    icon: <FaInstagram className="w-5 h-5" />,
-    url: "https://www.instagram.com",
-  },
-];
+import { Metadata } from "next";
+import { getLocalizedMetadata } from "@/metadataHelper";
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = getLocalizedMetadata(locale, "contact");
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
+  };
+}
+
 export default async function ContactPage() {
   return (
     <main>
       <PageBanner pageTitle="contact" />
 
       <section className=" secPadding container ">
-        <PageBreadCrumb pageTitle="contact" />{" "}
+        <PageBreadCrumb pageTitle="contact" /> <DisplayContactContent />
       </section>
     </main>
   );
@@ -93,21 +91,6 @@ export const DisplayContactContent = async () => {
                 <p>{text("workHoursWeekend")}</p>
               </div>
             </div>
-          </div>
-          <h3 className="text-lg md:text-xl mb-2 md:mb-3 md:mt-4 mt-3 font-semibold">
-            {text("followUs")}
-          </h3>
-          <div className="flex items-center  gap-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                className=" hover:text-primary transition-colors"
-              >
-                {link.icon}
-              </a>
-            ))}
           </div>
         </div>
       </div>

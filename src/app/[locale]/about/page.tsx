@@ -1,8 +1,23 @@
 import PageBanner from "@/components/PageBanner";
 import PageBreadCrumb from "@/components/PageBreadcrumb";
+import { getLocalizedMetadata } from "@/metadataHelper";
+import { Metadata } from "next";
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = getLocalizedMetadata(locale, "about");
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    keywords: metadata.keywords,
+  };
+}
 export default function AboutPage() {
   const text = useTranslations("about");
   return (

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
@@ -29,11 +30,11 @@ const HeroSection = () => {
           ></h1>
           <p className="md:text-lg mb-2 md:mb-3">{text("description")}</p>
           <div className="flex items-center gap-2">
-            <Button size={"lg"} className="w-44">
-              {text("action")}
+            <Button asChild size={"lg"} className="w-44">
+              <Link href={"/about"}>{text("action")}</Link>
             </Button>
-            <Button variant={"secondary"} className="w-44" size={"lg"}>
-              {text("subAction")}
+            <Button asChild variant={"secondary"} className="w-44" size={"lg"}>
+              <Link href={"/contact"}>{text("subAction")}</Link>
             </Button>
           </div>
         </div>

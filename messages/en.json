@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Building for the Future with ESV AS <br/> Your Trusted Contractor in Oslo",
+    "title": "Building for the Future with ESV AS <br/> Your Trusted Contractor in Norway ",
     "description": "We are an experienced construction contractor delivering tailored solutions for new construction, rehabilitation, and building interiors. Our focus is on quality, sustainability, and innovative approaches that deliver lasting results.",
     "action": "About us",
     "subAction": "Our services"
@@ -13,7 +13,7 @@
     "importantLinks": "Important Links",
     "phone": "+47  92929800",
     "email": "info@esvc.no",
-    "address": "Filipstadveien 3 0250 Oslo",
+    "address": "Filipstadveien 3 0250 Norway ",
     "orgNo": "Org. no: 920 833 381",
     "workHoursTitle": "Work hours:",
     "workHoursWeekdays": "Monday - Friday : 08:00 - 16:00",
@@ -31,11 +31,12 @@
   },
   "projects": {
     "title": "Our Projects",
-    "description": "We have completed a wide range of projects in Oslo and the surrounding areas. Our portfolio includes new construction, rehabilitation, and interior work. We are proud of the quality and craftsmanship that goes into every project we undertake.",
+    "description": "We have completed a wide range of projects in Norway  and the surrounding areas. Our portfolio includes new construction, rehabilitation, and interior work. We are proud of the quality and craftsmanship that goes into every project we undertake.",
     "action": "View all projects",
     "all": "All projects",
     "noProjects": "No projects found",
-    "service": "Service"
+    "service": "Service",
+    "somethingWentWrong": "Something went wrong. Please try again later."
   },
   "services": {
     "title": "Our Services",
@@ -62,7 +63,7 @@
     "selectService": "Select a service",
     "contactInfo": "Contact information",
     "phone": "+47  92929800",
-    "address": "Filipstadveien 3 0250 Oslo",
+    "address": "Filipstadveien 3 0250 Norway ",
     "orgNo": "Org. no: 920 833 381",
     "workHoursTitle": "Work hours:",
     "workHoursWeekdays": "Monday - Friday : 08:00 - 16:00",
@@ -72,7 +73,7 @@
   "about": {
     "title": "About us",
     "learnMore": "Learn more",
-    "homeP": "ESVC AS is a construction contractor based in Oslo, with extensive expertise in structural engineering and project management in accordance with NS 8405 and NS 8407. We take on projects in new construction, rehabilitation, service, and building interiors.",
+    "homeP": "ESVC AS is a construction contractor based in Norway , with extensive expertise in structural engineering and project management in accordance with NS 8405 and NS 8407. We take on projects in new construction, rehabilitation, service, and building interiors.",
     "aboutP1": "ESV AS was established in 2011 as a contracting company within the construction industry. Since then, we have grown to become a solid player and a professional construction contractor with over 90 dedicated employees. Our areas of operation include new construction, rehabilitation, service, and building interiors.",
     "aboutP2": "We always strive to challenge possibilities and place great emphasis on competence and quality while meeting the needs of our clients. Our projects are carried out in accordance with applicable regulations and completed on time with high quality and professionalism.",
     "healthTitle": "Health, Safety, and Environment (HSE)",
@@ -82,6 +83,6 @@
     "safetyTitle": "Safety and Efficiency",
     "safetyP": "We have implemented advanced systems, routines, and procedures that help us organize and plan for safe and efficient production. Our approach combines technological support with sound attitudes and strong values, making us one of the leading players in the industry regarding safety and quality.",
     "socialTitle": "Social Responsibility and Sponsorship",
-    "socialP": "ESV AS aims to be an active contributor to the local community. Through our sponsorship fund, we wish to support teams, organizations, and activities that promote healthy activities and provide good conditions for children and youth in Oslo. We believe in building a strong and sustainable future by investing in our young talents."
+    "socialP": "ESV AS aims to be an active contributor to the local community. Through our sponsorship fund, we wish to support teams, organizations, and activities that promote healthy activities and provide good conditions for children and youth in Norway . We believe in building a strong and sustainable future by investing in our young talents."
   }
 }

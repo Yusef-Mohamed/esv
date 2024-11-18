@@ -14,19 +14,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     <>
       <Link href={`/projects/${project._id}`} className="group cursor-pointer">
         <div className="relative overflow-hidden">
-          <div className="aspect-[2.5/4] bg-gray-200">
+          <div className="aspect-[8/5] bg-gray-200">
             {project.coverImage && (
               <Image
                 src={
                   (urlFor(project.coverImage)
-                    .width(500)
-                    .height(800)
+                    .width(800)
+                    .height(500)
                     ?.url() as string) || ""
                 }
                 alt={project.title_en}
-                className="w-full rounded aspect-[2.5/4] group-hover:scale-[1.2] transition-transform"
-                width={500}
-                height={800}
+                className="w-full rounded aspect-[8/5] group-hover:scale-[1.2] transition-transform"
+                width={800}
+                height={500}
               />
             )}
           </div>
