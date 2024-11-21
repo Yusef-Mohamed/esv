@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Script from "next/script";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -39,6 +40,22 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      {" "}
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LVXVT6NDV0"
+          strategy="afterInteractive"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LVXVT6NDV0');
+    `}
+        </Script>
+      </head>
       <body className={`antialiased ${poppins.className}`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
